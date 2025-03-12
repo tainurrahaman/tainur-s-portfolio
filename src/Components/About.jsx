@@ -5,9 +5,7 @@ const About = () => {
     <div>
       <h2>about</h2>
       <div className="flex">
-        <div>
-          <img src="" alt="" />
-        </div>
+        <div>{/* <img src="" alt="" /> */}</div>
         <div>
           {" "}
           <p>

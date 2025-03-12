@@ -6,7 +6,7 @@ const Skills = () => {
       <h2>my skills</h2>
       <div className="grid grid-cols-4">
         <div>
-          <img src="" alt="" />
+          {/* <img src="" alt="" /> */}
           <p>React</p>
         </div>
       </div>

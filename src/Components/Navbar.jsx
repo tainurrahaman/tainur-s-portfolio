@@ -22,9 +22,9 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100 shadow-sm flex justify-between">
+    <div className="navbar shadow-sm flex justify-between">
       <div className="navbar-start">
-        <a className="btn btn-ghost text-xl">Tainur Rahaman</a>
+        <a className="text-xl font-montserrat font-bold">Tainur Rahaman</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>

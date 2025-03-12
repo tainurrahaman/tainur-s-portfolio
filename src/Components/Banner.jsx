@@ -1,9 +1,11 @@
 import React from "react";
+import Lottie from "lottie-react";
+import lottieImage from "../assets/lottie.json";
 
 const Banner = () => {
   return (
-    <div className="hero bg-base-200 ">
-      <div className="flex justify-between">
+    <div className="hero ">
+      <div className="flex justify-between items-center">
         <div className="max-w-3/5">
           <h1 className="text-5xl font-bold">Frontend Developer</h1>
           <p className="py-6">
@@ -13,10 +15,12 @@ const Banner = () => {
           </p>
           <button className="btn btn-primary">Resume</button>
         </div>
+
         <div className="max-w-2/5">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-            className="max-w-sm rounded-lg shadow-2xl"
+          <Lottie
+            animationData={lottieImage}
+            loop={true}
+            className="w-80 h-80"
           />
         </div>
       </div>
