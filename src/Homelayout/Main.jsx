@@ -14,8 +14,8 @@ const Main = () => {
       <div className="max-w-6xl mx-auto px-5 md:px-10 lg:px-5">
         <Navbar />
         <Outlet />
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };

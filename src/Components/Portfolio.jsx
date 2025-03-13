@@ -1,31 +1,81 @@
-import React from "react";
+import project1 from "../assets/pic1.png";
+import project2 from "../assets/pic2.png";
+import project3 from "../assets/pic3.png";
 
 const Portfolio = () => {
   return (
-    <div>
-      <h2>my portfolio</h2>
-      <h4>my latest work</h4>
-      <p>welcome to developer</p>
-      <div className="grid grid-cols-3">
-        <div className="card bg-base-100 w-96 shadow-sm">
-          <figure>
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-              alt="Shoes"
-            />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">
-              Card Title
-              <div className="badge badge-secondary">NEW</div>
+    <div className="my-8 md:my-14 lg:my-20">
+      <h2 className="font-bold text-4xl md:text-5xl text-center">My Work</h2>
+      <h4 className="py-5 md:py-12 text-2xl  md:text-3xl text-center px-5">
+        Some of the noteworthy projects I have built:
+      </h4>
+      <div className="space-y-8">
+        <div className="flex bg-base-100 shadow-sm mx-10 rounded-2xl">
+          <div className="flex-1 p-5 bg-gray-700 rounded-l-2xl">
+            <img className="rounded-lg" src={project1} alt="Shoes" />
+          </div>
+          <div className=" flex-1 card-body">
+            <h2 className="card-title mb-3">
+              ScholarBeacon
+              <div className="badge badge-secondary">Latest</div>
             </h2>
             <p>
-              A card component has a figure, a body part, and inside body there
-              are title and actions parts
+              ScholarBeacon is a web platform for easy scholarship applications,
+              reviews, and management. It's built with React and Tailwind CSS,
+              it offers a responsive UI, secure authentication, and real-time
+              updates.
             </p>
-            <div className="card-actions justify-end">
-              <div className="badge badge-outline">Fashion</div>
-              <div className="badge badge-outline">Products</div>
+            <div className="card-actions justify-start">
+              <div className="badge badge-outline">JavaScript</div>
+              <div className="badge badge-outline">React</div>
+              <div className="badge badge-outline">Tailwind CSS</div>
+              <div className="badge badge-outline">Firebase</div>
+              <div className="badge badge-outline">MongoDB</div>
+              <div className="badge badge-outline">Express.js</div>
+            </div>
+          </div>
+        </div>
+        <div className="flex bg-base-100 shadow-sm mx-10 rounded-2xl">
+          <div className="flex-1 p-5 bg-gray-700 rounded-l-2xl">
+            <img className="rounded-lg" src={project2} alt="Shoes" />
+          </div>
+          <div className=" flex-1 card-body">
+            <h2 className="card-title mb-3">AntiqueArchive</h2>
+            <p>
+              AntiqueArchive is a web platform for discovering and managing
+              antique collections. Built with React and Tailwind CSS, it
+              features search, filters, real-time updates, and secure
+              authentication for a smooth user experience.
+            </p>
+            <div className="card-actions justify-start">
+              <div className="badge badge-outline">JavaScript</div>
+              <div className="badge badge-outline">React</div>
+              <div className="badge badge-outline">Tailwind CSS</div>
+              <div className="badge badge-outline">Firebase</div>
+              <div className="badge badge-outline">MongoDB</div>
+              <div className="badge badge-outline">Express.js</div>
+            </div>
+          </div>
+        </div>
+        <div className="flex bg-base-100 shadow-sm mx-10 rounded-2xl">
+          <div className="flex-1 p-5 bg-gray-700 rounded-l-2xl">
+            <img className="rounded-lg" src={project3} alt="Shoes" />
+          </div>
+          <div className=" flex-1 card-body">
+            <h2 className="card-title mb-3">VisaHub</h2>
+            <p>
+              This visa application platform lets users explore, add, and apply
+              for visas with secure authentication. It offers search, filters,
+              real-time notifications, and a responsive design for smooth and
+              efficient visa management.
+            </p>
+            <div className="card-actions justify-start">
+              <div className="badge badge-outline">JavaScript</div>
+              <div className="badge badge-outline">React</div>
+              <div className="badge badge-outline">Tailwind CSS</div>
+              <div className="badge badge-outline">Firebase</div>
+              <div className="badge badge-outline">MongoDB</div>
+              <div className="badge badge-outline">Express.js</div>
             </div>
           </div>
         </div>
