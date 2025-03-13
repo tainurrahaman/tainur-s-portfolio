@@ -22,7 +22,7 @@ const Contact = () => {
       <div>
         <h2>Contact Form</h2>
         <div className="flex items-center justify-center ">
-          <form className="w-full max-w-md p-6 space-y-4 rounded-lg shadow-lg">
+          <form className="w-full p-6 space-y-4 rounded-lg shadow-lg">
             <div>
               <label className="block text-gray-300">Name</label>
               <input

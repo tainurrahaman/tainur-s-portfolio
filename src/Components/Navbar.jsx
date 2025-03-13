@@ -3,33 +3,35 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const links = (
     <>
-      <li>
+      <li className="font-semibold text-[15px] hover:text-purple-500">
         <NavLink to="/">Home</NavLink>
       </li>
-      <li>
+      <li className="font-semibold text-[15px] hover:text-purple-500">
         <NavLink to="/">About</NavLink>
       </li>
-      <li>
-        <NavLink to="/about">Skills</NavLink>
+      <li className="font-semibold text-[15px] hover:text-purple-500">
+        <NavLink to="/">Skills</NavLink>
       </li>
-      <li>
+      <li className="font-semibold text-[15px] hover:text-purple-500">
         <NavLink to="/">Work</NavLink>
       </li>
-      <li>
-        <NavLink to="/about">Contact</NavLink>
+      <li className="font-semibold text-[15px] hover:text-purple-500">
+        <NavLink to="/">Contact</NavLink>
       </li>
     </>
   );
 
   return (
-    <div className="navbar shadow-sm flex justify-between">
+    <div className="navbar shadow-sm flex justify-between py-5">
       <div className="navbar-start">
-        <a className="text-xl font-montserrat font-bold">Tainur Rahaman</a>
+        <a className="text-xl md:text-3xl lg:text-4xl font-montserrat font-bold">
+          Tainur Rahaman
+        </a>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="md:navbar-end lg:navbar-center max-w-96 hidden md:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
-      <div className="navbar-end flex items-center gap-4">
+      <div className="md:hidden lg:navbar-end flex items-center gap-4">
         <div className="md:hidden">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
@@ -56,8 +58,8 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div className="hidden md:block">
-          <button className="btn">Button</button>
+        <div className="hidden lg:block">
+          <button className="btn bg-purple-600">Resume</button>
         </div>
       </div>
     </div>

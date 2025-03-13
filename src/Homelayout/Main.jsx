@@ -8,11 +8,10 @@ const Main = () => {
       className="font-roboto"
       style={{
         backgroundImage: "url('https://i.ibb.co.com/7NnXzRbY/dhumketu-1.webp')",
-        opacity: 0.9,
+        opacity: 0.8,
       }}
     >
-      <div className=" inset-0 bg-black bg-opacity-50"></div>
-      <div className="relative max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto px-5 md:px-10 lg:px-5">
         <Navbar />
         <Outlet />
         <Footer />
